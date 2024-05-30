@@ -14,4 +14,4 @@ text.textContent = `カラーコード：${color.value}`;
 ③カラーコードを表示する
 */
 
-色が.addEventLisner(選択されたら,カラーコードを表示する)；
+色が.addEventLisner(選択されたら,カラーコードを表示する);
