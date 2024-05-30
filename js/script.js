@@ -4,14 +4,10 @@ const text= document.querySelector('#colorText');
 // カラーピッカーのコード番号を取得する
 const color = document.querySelector('#colorPicker');
 
-// 「カラーコードを検索」→[カラーコード：#000000]と表示する
-text.textContent = `カラーコード：${color.value}`;
 
-/*
-実装したいこと
-①（カラーピッカーで）色が
-②選択されたら
-③カラーコードを表示する
-*/
+const colorBg = () => {
+  text.textContent = `カラーコード：${color.value}`;
+}
 
+// カラーピッカーが変更されたら　colorBgを発動させる
 color.addEventListener('input', colorBg);
