@@ -10,7 +10,13 @@ const colorBg = () => {
   document.body.style.backgroundColor = color.value;
 
   // カラーコードを表示
-  text.textContent = `カラーコード：${color.value}`;
+  if (color.value === '#ffffff') {
+    text.textContent = `カラーコード：${color.value}(white)`;
+  } else if (color.value === '#000000') {
+    text.textContent = `カラーコード：${color.value}(black)`;
+  } else {
+    text.textContent = `カラーコード：${color.value}`;
+  }
 }
 
 // カラーピッカーが変更されたら　colorBgを発動させる
